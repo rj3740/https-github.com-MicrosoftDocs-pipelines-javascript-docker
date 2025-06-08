@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: rjhttpsgithubcommicrosoftdocspipelinesjavascriptdo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rjhttpsgithubcommicrosoftdocspipelinesjavascriptdo
+  template:
+    metadata:
+      labels:
+        app: rjhttpsgithubcommicrosoftdocspipelinesjavascriptdo 
+    spec:
+      containers:
+        - name: rjhttpsgithubcommicrosoftdocspipelinesjavascriptdo 
+          image: rjapp.azurecr.io/rjhttpsgithubcommicrosoftdocspipelinesjavascriptdo
+          ports:
+          - containerPort: 8080
